@@ -1,0 +1,15 @@
+.home {
+  width: 100%;
+  min-height: 80vh;
+  /* padding: 0 15px; */
+}
+
+.title {
+  /* padding: 20px; */
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

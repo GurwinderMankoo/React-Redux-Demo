@@ -1,0 +1,17 @@
+.editModal {
+  margin-top: 10px;
+}
+.editModal input {
+  width: 100%;
+  height: 20px;
+}
+
+.errorMsg {
+  display: block;
+  margin-top: 5px;
+  color: red;
+}
+
+.inputError {
+  border-color: red;
+}

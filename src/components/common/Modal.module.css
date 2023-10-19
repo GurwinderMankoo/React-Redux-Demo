@@ -1,0 +1,105 @@
+.modal {
+  z-index: 99999;
+  position: fixed;
+  max-width: 500px;
+  /* height: 700px; */
+  width: 80%;
+  max-height: 80vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: white;
+  /* display: none; */
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal.open {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal.close {
+  transform: translate(-50%, -50%) scale(0);
+  /* display: none; */
+}
+
+.header {
+  height: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+.modalBody {
+  padding: 20px;
+}
+
+.actions {
+  height: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  color: black;
+  align-items: center;
+  justify-content: end;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.actions button {
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.actions button.primary {
+  background-color: rgb(63, 63, 212);
+  color: white;
+}
+.actions button.danger {
+  background-color: rgb(184, 8, 8);
+  color: white;
+}
+
+.actions button.loading {
+  pointer-events: none;
+}
+
+.closeBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.closeBtn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.backDrop {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.backDrop.open {
+  display: block;
+}
